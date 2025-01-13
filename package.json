@@ -1,27 +1,33 @@
 {
-    "name": "use_thumb",
-    "version": "1.0.0",
-    "description": "TBD",
-    "keywords": [
-        "typescript",
-        "thumbnail",
-        "image"
-    ],
-    "homepage": "https://github.com/berlink2/use_thumb",
-    "bugs": {
-        "url": "https://github.com/berlink2/use_thumb/issues"
-    },
-    "author": "Berlian Khatulistiwa <berlink.k2@gmail.com>",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/berlink2/use_thumb.git"
-    },
-    "files": [
-        "dist"
-    ],
-    "type": "module",
-    "license": "MIT",
-    "devDependencies": {
-        "typescript": "^5.7.3"
-    }
+  "name": "use_thumb",
+  "version": "1.0.0",
+  "description": "TBD",
+  "keywords": [
+    "typescript",
+    "thumbnail",
+    "image"
+  ],
+  "homepage": "https://github.com/berlink2/use_thumb",
+  "bugs": {
+    "url": "https://github.com/berlink2/use_thumb/issues"
+  },
+  "author": "Berlian Khatulistiwa <berlink.k2@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berlink2/use_thumb.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
+  }
 }
