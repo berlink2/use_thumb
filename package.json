@@ -16,18 +16,22 @@
     "type": "git",
     "url": "git+https://github.com/berlink2/use_thumb.git"
   },
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "type": "module",
   "license": "MIT",
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.3",
     "prettier": "^3.4.2",
     "typescript": "^5.7.3"
   },
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build",
-    "format": "prettier --write ."
+    "ci": "npm run build && npm run check-format && npm run check-exports",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
   }
 }
